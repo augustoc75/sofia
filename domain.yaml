@@ -1,0 +1,287 @@
+session_config:
+  session_expiration_time: 0
+  carry_over_slots_to_new_session: true
+intents:
+  - telefone
+  - modulos_SIOP
+  - quem_criou
+  - o_que_eu_sei
+  - nao_entendi
+  - testes
+  - bronca
+  - esqueci
+  - cumprimentar
+  - despedir
+  - diga_mais
+  - out_of_scope
+  - action_test
+  - como_estou
+  - negar
+  - tudo_bem
+  - elogios
+  - risada
+  - apresentar
+  - Siopdef
+  - Siop_historico
+  - Siop_acesso
+  - Siop_senha
+  - responder_senha
+  - ainda_nao_sei
+  - abrir_chamado
+  - tem_duvida
+  - agradecimento
+  - reportar_problema
+  - perfil
+  - cadastrador
+  - funcoes_SIOP
+  - modulos_siop
+  - funcoes_siop
+entities:
+  - modulo
+responses:
+  utter_diga_mais:
+    - text: >-
+        Por enquanto, só entendo perguntas completas. Conte um pouco mais sobre
+        a sua dúvida.
+    - text: Desculpe.  Preciso que você detalhe um pouco mais sua dúvida.
+  utter_elogios:
+    - text: Obrigada! Gentileza sua. Você tem alguma outra dúvida?
+    - text: Obrigada pelo elogio! Algo mais em que posso ajudar?
+  utter_despedir:
+    - text: Espero ter ajudado! Até logo!
+    - text: Foi um prazer conversar com você! Até logo!
+    - text: Que bom! Algo mais em que posso ajudar?
+  utter_senha:
+    - text: >-
+        Você pode seguir o procedimento de recuperação de senha, descrito nesse
+        site: [clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/ead-siop:manual_uso_basico_siop#da_recuperacao_de_senha_esqueceu_sua_senha).
+        A nova senha será encaminhada ao e-mail que consta no seu cadastro no
+        SIOP.
+    - text: >-
+        Para recuperar sua senha basta seguir o procedimento de recuperação
+        descrito neste link: [clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/ead-siop:manual_uso_basico_siop#da_recuperacao_de_senha_esqueceu_sua_senha).
+        A nova senha será encaminhada ao e-mail que consta no seu cadastro no
+        SIOP.
+  utter_siopdef:
+    - text: >-
+        O SIOP é o sistema informatizado que suporta os processos de
+        Planejamento e Orçamento do Governo Federal.  É o resultado da
+        iniciativa de integração dos sistemas e processos a partir da
+        necessidade de otimizar procedimentos,  reduzir custos, integrar e
+        oferecer informações para o gestor público e para os cidadãos.
+  utter_historico:
+    - text: >-
+        O SIOP começou a ser desenvolvido em 2009 por iniciativa da SOF
+        (Secretaria de Orçamento Federal do Ministério do Planejamento,
+        Orçamento e Gestão)                   em substituição ao antigo sistema
+        usado para o Orçamento Federal, SIDOR. A primeira menção oficial ao SIOP
+        foi o MTO de 2010. Depois desta data o SIOP é regularmente citado nas
+        LOA's e LDOs como o sistema institucional de suporte ao orçamento
+        federal.
+  utter_apresentar:
+    - text: >-
+        Olá! Meu nome é Sofia! Sou uma assistente virtual criada para esclarecer
+        dúvidas sobre cadastramento e acesso ao SIOP. Posso lhe ajudar?
+  utter_nao_posso_ajudar:
+    - text: >-
+        Lamento não poder ajudar. Sugiro acionar a Central de Atendimento por
+        meio da abertura de um chamado. Vou deixar o link da Central pra você:
+        [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+    - text: >-
+        Sinto muito. Talvez você precise registrar um chamado para obter ajuda.
+        Vou deixar o link da Central pra você: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+    - text: >-
+        Desculpe. Ainda tenho muito a aprender. Já que não consegui te ajudar,
+        recomendo que você abra um chamado na Central de Atendimento: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+        para acessar.
+  utter_cumprimentar:
+    - text: >-
+        Olá! Meu nome é Sofia! Sou uma assistente virtual criada para esclarecer
+        dúvidas a respeito do cadastramento e acesso ao sistema SIOP. Como posso
+        ajudar?
+    - text: >-
+        Oi! Meu nome é Sofia! Sou uma assistente virtual criada para esclarecer
+        dúvidas sobre cadastro e acesso ao sistema SIOP. Como posso ajudar?
+  utter_teste:
+    - text: Ok! Teste recebido. Como posso ajudar?
+  utter_esqueceu_usuario:
+    - text: >-
+        Não tem problema. No Siop, a identificação do seu usuário é o número do
+        CPF. Se você não possui cadastro ou precisa uma nova senha, por
+        gentileza procure o Cadastrador Local vinculado ao seu órgão. Para
+        consultar a lista completa de cadastradores [clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/gestao_de_usuarios_cadastrador_local:lista_cadastradores_locais).
+    - text: >-
+        Tudo bem. No sistema SIOP a sua identificação de usuário corresponde ao
+        seu número de CPF. Se você não possui cadastro ou precisa uma nova
+        senha, por gentileza procure o Cadastrador Local vinculado ao seu órgão.
+        Para consultar a lista completa de cadastradores [clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/gestao_de_usuarios_cadastrador_local:lista_cadastradores_locais).
+  utter_o_que_sei:
+    - text: >-
+        Fui treinada para responder dúvidas a respeito do cadastramento e acesso
+        ao sistema SIOP. Você tem alguma dúvida?
+    - text: >-
+        Humm... No momento estou treinada para responder dúvidas sobre cadastro
+        e acesso ao sistema SIOP. Como posso ajudar?
+    - text: >-
+        Atualmente posso responder dúvidas sobre cadastramento e acesso ao SIOP.
+        Você tem alguma dúvida?
+  utter_nao_entendi:
+    - text: >-
+        Desculpe, acho que não entendi o que você quis dizer. Você pode
+        perguntar de outra forma?
+    - text: Não entendi. Vamos tentar de novo? Você pode perguntar de outra forma?
+  utter_tudo_bem:
+    - text: >-
+        Estou bem. Obrigada por perguntar! O que você gostaria de saber sobre o
+        sistema SIOP?
+  utter_responder_senha:
+    - text: >-
+        Não sei dizer qual é a sua senha, mas posso orientar você a trocá-la,
+        caso seja necessário. Basta você seguir o procedimento de recuperação de
+        senha, descrito nesse site: [clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/ead-siop:manual_uso_basico_siop#da_recuperacao_de_senha_esqueceu_sua_senha).
+        A nova senha será encaminhada ao e-mail que consta no seu cadastro no
+        SIOP.
+  utter_ainda_nao_sei:
+    - text: >-
+        Desculpe. Ainda não sei responder questões sobre esse assunto, mas você
+        pode abrir um chamado em nosso portal de atendimento. Vou deixar o link
+        pra você: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+    - text: >-
+        Perdão. Ainda não fui treinada para responder esse tipo de questão, mas
+        você pode abrir um chamado em nosso portal de atendimento. Vou deixar o
+        link pra você: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+  utter_tem_duvida:
+    - text: Certo. E qual seria sua dúvida?
+    - text: Hummm... e como posso te ajudar?
+    - text: Conte um pouco mais. Qual sua dúvida?
+  utter_agradecimento:
+    - text: Disponha! Posso ajudar em algo mais?
+    - text: Que bom! Algo mais em que posso ajudar?
+    - text: Não tem de quê! Você tem mais alguma dúvida?
+    - text: Fico feliz em poder ajudar. Você tem alguma outra dúvida?
+  utter_abrir_chamado:
+    - text: >-
+        Entendi. Você precisa abrir um chamado.  Ainda não consigo abrir um, mas
+        vou deixar o link da Central pra você: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+    - text: >-
+        Tudo bem. Para abrir um chamado, você precisa acessar a Central de
+        Atendimento. Vou deixar o link pra você: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+    - text: >-
+        Certo. Nesse caso vou deixar o link da Central de Atendimento pra você:
+        [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load).
+        Através dele você poderá abrir um chamado.
+  utter_acesso:
+    - text: >-
+        O acesso aos usuários é fornecido por meio do Cadastrador Local do Órgão
+        ao qual o usuário está vinculado. [Clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/gestao_de_usuarios_cadastrador_local:lista_cadastradores_locais)
+        para consultar a lista dos cadastradores locais. Para baixar o
+        formulário [clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/lib/exe/fetch.php/controle_acesso:fichacadastrosiop-sof.odt)
+    - text: >-
+        Para obter acesso ao SIOP você precisa contatar o Cadastrador Local do
+        Órgão onde você trabalha . [Clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/gestao_de_usuarios_cadastrador_local:lista_cadastradores_locais)
+        para consultar a lista dos cadastradores locais. Para baixar o
+        formulário [clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/lib/exe/fetch.php/controle_acesso:fichacadastrosiop-sof.odt)
+  utter_reportar_problema:
+    - text: >-
+        Infelizmente, não tenho condições de responder sobre esse assunto. Você
+        precisa abrir um chamado na Central de Atendimento. Vou deixar o link da
+        Central pra você: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+    - text: >-
+        Desculpe, mas não consigo ajudar. Nesse caso você precisa abrir um
+        chamado na Central de Atendimento. Vou deixar o link da Central pra
+        você: [clique
+        aqui](https://portaldeservicos.economia.gov.br/citsmart/login/login.load)
+  utter_perfil:
+    - text: >-
+        Para ajustar o seu perfil de acesso você precisará contatar o
+        cadastrador local do seu órgão.  [Clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/gestao_de_usuarios_cadastrador_local:lista_cadastradores_locais)
+        para consultar a lista dos cadastradores locais.
+    - text: >-
+        Parece que você está com algum problema de permissão ou perfil de
+        acesso. Nesse caso você precisará contatar o cadastrador local do seu
+        órgão para obter ajuda. [Clique
+        aqui](https://www1.siop.planejamento.gov.br/siopdoc/doku.php/gestao_de_usuarios_cadastrador_local:lista_cadastradores_locais)
+        para consultar a lista dos cadastradores locais.
+  utter_cadastrador:
+    - text: >-
+        O cadastrador local é o responsável por manter a lista de usuários e
+        respectivos privilégios no SIOP dentro de um órgão setorial. Ele somente
+        pode alterar perfis e papéis dentro do seu próprio órgão.
+  utter_modulos:
+    - text: >-
+        O SIOP possui os seguintes módulos: PPA, PLDO, PLOA, Receitas,
+        Alterações Orçamentárias, Acompanhamento Orçamentário, Orçamento
+        Impositivo, Empresas Estatais, Expansão de Limites de Empenho, Gestão do
+        Sistema e Controle de Acesso.
+  utter_funcoes:
+    - text: >-
+        As principaisfunções do SIOP são: Elaboração e revisão do Projeto de Lei
+        do Plano Plurianual – PLPPA, Elaboração do Projeto de Lei de Diretrizes
+        Orçamentárias – PLDO, Elaboração do Projeto de Lei Orçamentária Anual –
+        PLOA,  Alterações Orçamentárias/Créditos, Orçamento Impositivo,
+        Receitas, Acompanhamento das Estatais, Acompanhamento Orçamentário,
+        Monitoramento do PPA.
+  utter_autores:
+    - text: >-
+        Fui criada por uma equipe da Coordenação-Geral de Tecnologia da
+        Informação da Secretaria de Orçamento Federal. Várias pessoas
+        contribuíram para esse projeto e continuam trabalhando para seu
+        aprimoramento. O que mais você gostaria de saber?
+  utter_default:
+    - text: >-
+        Desculpe.  Eu consigo responder somente questões sobre cadastramento e
+        acesso ao sistema SIOP. Por favor, pergunte algo a respeito do SIOP.
+actions:
+  - utter_apresentar
+  - utter_diga_mais
+  - utter_cumprimentar
+  - action_test
+  - utter_acesso
+  - utter_tudo_bem
+  - utter_elogios
+  - utter_despedir
+  - utter_senha
+  - utter_como_estou
+  - utter_siopdef
+  - utter_historico
+  - utter_nao_entendi
+  - utter_teste
+  - utter_esqueceu_usuario
+  - utter_nao_posso_ajudar
+  - utter_o_que_sei
+  - utter_responder_senha
+  - utter_ainda_nao_sei
+  - utter_tem_duvida
+  - utter_agradecimento
+  - utter_abrir_chamado
+  - utter_reportar_problema
+  - utter_perfil
+  - utter_cadastrador
+  - utter_modulos
+  - utter_funcoes
+  - utter_autores
+  - utter_default
+  - action_session_start
+  - action_session_start
+  - action_restart
+  - action_restart
+  - action_session_start
